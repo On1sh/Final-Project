@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0n0 Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/sqww.png" alt="0n0 Clothing Showcase"></div>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#contact">LINK</a></li>
+                <li><a href="#cart">CART</a></li>
+             
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="about" class="about">
+        <h1>0n0 </h1>
+        <p>
+            At 0n0, we believe in crafting timeless, high-quality apparel that resonates with individuality. 
+            Our designs are inspired by modern aesthetics and traditional craftsmanship, aiming to redefine fashion in Nepal and beyond. 
+            Each piece is made with attention to detail, ensuring a perfect balance of comfort, style, and durability.
+        </p>
+        <img src="images/eert.png" alt="0n0 Clothing Showcase">
+        <p>
+            Join us on our journey as we challenge trends, embrace authenticity, and empower our community through fashion.
+        </p>
+        <img src="images/ee.jpg" >
+        <p>
+            From the earth we emerge, shaped by the dust and elements of the world around us, and to the earth we shall return.
+             In between, we live, we breathe, we strive, yet all is transient. The body, though precious, is but a vessel—no more 
+             permanent than the dust from which it arose.
+        </p>
+        <button onclick="scrollToProducts()">BUY PRODUCT</button>
+    </section>
+
+    
+    <section class="hero" id="shop">
+        <h1>0n0</h1>
+        
+    </section>
+
+    
+    <section class="product-gallery">
+        <h2>Featured Collection</h2>
+        <div class="products">
+            
+            <div class="product" data-name="Cozy Hoodie " data-price="3490.99">
+                <img src="images/hoodie.png" alt="Hoodie">
+                <p>Cozy Hoodie</p>
+                <p>3490.99</p>
+                <button onclick="addToCart('Cozy Hoodie', 3490.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Classic Tee" data-price="3290.99">
+                <img src="images/tee.png" alt="Tee">
+                <p>Classic Tee</p>
+                <p>3290.99</p>
+                <button onclick="addToCart('Classic Tee', 3290.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Stylish Jacket" data-price="4890.99">
+                <img src="images/jacket.png" alt="Jacket">
+                <p>Stylish Jacket</p>
+                <p>4890.99</p>
+                <button onclick="addToCart('Jacket', 4890.99)">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-name="Cozy Hoodie Black" data-price="4900.99">
+                <img src="images/hoodie black.png" alt="Hoodie Black">
+                <p>Cozy Hoodie</p>
+                <p>4900.99</p>
+                <button onclick="addToCart('Cozy Hoodie Black', 4900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Classic Tee Grey" data-price="2900.99">
+                <img src="images/shirt grey.png" alt="Tee">
+                <p>Classic Tee Grey</p>
+                <p>2900.99</p>
+                <button onclick="addToCart('Classic Tee Grey', 2900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Stylish Jacket Black" data-price="8900.99">
+                <img src="images/jacket black.png" alt="Jacket Black">
+                <p>Stylish Jacket Black</p>
+                <p>8900.99</p>
+                <button onclick="addToCart('Jacket', 8900.99)">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-name="Cozy Hoodie Grey" data-price="4900.99">
+                <img src="images/hoodie grey.png" alt="Hoodie Grey">
+                <p>Cozy Hoodie Grey</p>
+                <p>4900.99</p>
+                <button onclick="addToCart('Cozy Hoodie Grey', 4900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Classic Tee Black" data-price="2900.99">
+                <img src="images/shirt black.png" alt="Tee Black">
+                <p>Classic Tee Black</p>
+                <p>2900.99</p>
+                <button onclick="addToCart('Classic Tee', 2900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Stylish Jacket Grey" data-price="8900.99">
+                <img src="images/jacket grey.png" alt="Jacket Grey">
+                <p>Stylish Jacket Grey</p>
+                <p>8900.99</p>
+                <button onclick="addToCart('Jacket Grey', 8900.99)">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-name="shorts grey" data-price="4900.99">
+                <img src="images/shorts grey.png" alt="shorts grey">
+                <p>shorts grey</p>
+                <p>4900.99</p>
+                <button onclick="addToCart('Pants White', 4900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Pants White" data-price="2900.99">
+                <img src="images/pw.png" alt="Pants White">
+                <p>Classic Tee</p>
+                <p>2900.99</p>
+                <button onclick="addToCart('Pants White', 2900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Pants Grey" data-price="8900.99">
+                <img src="images/pg.png" alt="Pants Grey">
+                <p>Pants Grey</p>
+                <p>8900.99</p>
+                <button onclick="addToCart('Pants Grey', 8900.99)">Add to Cart</button>
+            </div>
+            
+            <div class="product" data-name="Pants Black" data-price="4900.99">
+                <img src="images/pb.png" alt="Pants Black">
+                <p>Pants Black</p>
+                <p>4900.99</p>
+                <button onclick="addToCart('Pants Black', 4900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="White Socks" data-price="2900.99">
+                <img src="images/sw.png" alt="White Socks">
+                <p>White Socks</p>
+                <p>2900.99</p>
+                <button onclick="addToCart('White Socks', 2900.99)">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Black Socks" data-price="8900.99">
+                <img src="images/sb.png" alt="Black Socks">
+                <p>Black Socks</p>
+                <p>8900.99</p>
+                <button onclick="addToCart('Black Socks', 8900.99)">Add to Cart</button>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0.00</p>
+    </section>
+    
+    <section id="paynow">
+        <h2>PayNow</h2>
+        <button id="paynow-button">Pay Now</button>
+        <div id="qr-popup" class="qr-popup">
+            <div class="qr-container">
+                <img src="images/ssqww.png" alt="QR Code for Payment" class="qr-image">
+                <p class="qr-label">Scan QR Code to Pay, Order Details will be sent to Email.</p>
+                <button id="close-button">Close</button>
+            </div>
+        </div>
+    </section>
+   
+
+    
+    <footer id="contact">
+        <p>LINK</p>
+        <ul>
+            <li><a href="https://www.instagram.com/00.0n0.00/" target="_blank" >Instagram</a></li>
+            <li><a href="https://www.facebook.com/00.0n0.00/" target="_blank" >Facebook</a></li>
+            <li><a href="https://yeezy.com/" target="_blank" >Inspired from</a></li>
+        </ul>
+    </footer>
+    <script>
+        function scrollToProducts() {
+            document.getElementById('shop').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+    
+    
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #465a9b;
+    --primary-hover: #577494;
+    --reset-color: #e0e0e0;
+    --reset-hover: #ccc;
+    --text-color: #343c49;
+    --background-color: #657ead;
+    --card-background: #ffffff;
+    --border-color: #e5e7eb;
+    --input-focus-color: #6e8efb;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--input-focus-color);
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="reset"] {
+    background-color: var(--reset-color);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+button[type="reset"]:hover {
+    background-color: var(--reset-hover);
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
